@@ -15,10 +15,12 @@ import Signup from './pages/Signup';
 import Error from './pages/Error';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import Rootlayout from './layouts/Rootlayout';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+    <Route path="/" element={<Rootlayout />}>
     <Route path="/" element={<Home />} > </Route>
     <Route path="/shop" element={<Shop />} > </Route>
     <Route path="/product" element={<Product />} > </Route>
@@ -29,6 +31,7 @@ const router = createBrowserRouter(
     <Route path="/cart" element={<Cart />} > </Route>
     <Route path="/checkout" element={<Checkout />} > </Route>
     <Route path="/error" element={<Error />} > </Route>
+    </Route>
     </>
   )
 );
