@@ -5,11 +5,13 @@ import Image from '../components/Image'
 import about_img from '../assets/Image_5.png'
 import Product_1 from '../assets/Image_1.png'
 import Button from '../components/Button'
+import Title from '../components/Title'
 
 const About = () => {
   return (
     <Container>
       <h1 className='pt-[120px] font-bold font-dm text-4xl text-secondary'>About</h1>
+      <Title className='mt-10' t_text='About'/>
       <Flex className='justify-between gap-y-6 pt-[163px] pb-[128px]'>
         <div className='w-w49 relative'>
           <Image className='w-full' src={about_img} />

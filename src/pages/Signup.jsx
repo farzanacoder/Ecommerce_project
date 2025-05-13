@@ -2,17 +2,19 @@ import React from 'react'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
 import Button from '../components/Button'
+import Title from '../components/Title'
 
 const Signup = () => {
   return (
     <section>
       <Container>
-      <h1 className='py-[120px] font-bold font-dm text-4xl text-secondary'>Sign up</h1>
-      <div className='w-full border-b border-[#F0F0F0]'>
+      <h1 className='pt-[120px] font-bold font-dm text-4xl text-secondary'>Sign up</h1>
+      <Title className='mt-10' t_text='Sign up'/>
+      <div className='pt-[120px] w-full border-b border-[#F0F0F0]'>
       <p className='font-dm w-[55%] mb-15 font-normal text-base text-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
       </div>
       <h1 className='py-[45px] font-bold font-dm text-3xl text-secondary'>Your Personal Details</h1>
-      <Flex className='gap-x-10 flex-wrap -full border-b border-[#F0F0F0] pb-[70px]'>
+      <Flex className='gap-x-10 flex-wrap w-full border-b border-[#F0F0F0] pb-[70px]'>
       <label className='text-base font-dm font-bold w-[35%] text-secondary' htmlFor="name">First Name <br />
         <input className='text-sm mb-6 font-normal py-6 border-b border-[#F0F0F0] w-full' type="email" name="" id="" placeholder='First Name' />
       </label> <br />
@@ -58,11 +60,11 @@ const Signup = () => {
       </Flex>
 
       <ul className='pt-[65px] pb-[27px]'>
-        <li className='font-dm font-normal text-sm text-primary'><input type="checkbox" />I have read and agree to the Privacy Policy</li>
-        <Flex className='gap-x-1.5'>
-        <li className='font-dm font-normal text-sm text-primary'>Subscribe Newsletter</li>
-        <li className='font-dm font-normal text-sm text-primary'><input type="checkbox" name="" id="" />Yes</li>
-        <li className='font-dm font-normal text-sm text-primary'><input type="checkbox" name="" id="" />No</li>
+        <li className='font-dm font-normal text-sm text-primary'><input type="checkbox" className='pl-4'/>I have read and agree to the Privacy Policy</li>
+        <Flex className='gap-x-1.5 mt-[23px]'>
+        <li className='font-dm font-normal text-sm text-primary mr-[33px]'>Subscribe Newsletter</li>
+        <li className='font-dm font-normal text-sm text-primary'><input className='mr-[15px]' type="checkbox" name="" id="" />Yes</li>
+        <li className='font-dm font-normal text-sm text-primary'><input className='mr-[15px]' type="checkbox" name="" id="" />No</li>
         </Flex>
       </ul>
       <Button className='mb-[140px]' text='Log in'/>

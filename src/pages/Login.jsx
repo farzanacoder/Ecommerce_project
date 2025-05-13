@@ -2,13 +2,15 @@ import React from 'react'
 import Container from '../components/Container'
 import Button from '../components/Button'
 import Flex from '../components/Flex'
+import Title from '../components/Title'
 
 const Login = () => {
   return (
     <section>
       <Container>
-      <h1 className='py-[120px] font-bold font-dm text-4xl text-secondary'>Login</h1>
-      <div className='w-full border-b border-[#F0F0F0]'>
+      <h1 className='pt-[120px] font-bold font-dm text-4xl text-secondary'>Login</h1>
+      <Title className='mt-10' t_text='Login'/>
+      <div className='pt-[120px] w-full border-b border-[#F0F0F0]'>
       <p className='font-dm w-[55%] mb-15 font-normal text-base text-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
       </div>
       <h1 className='py-[120px] font-bold font-dm text-3xl text-secondary'>Returning Customer</h1>

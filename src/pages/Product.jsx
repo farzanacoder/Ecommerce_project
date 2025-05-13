@@ -10,11 +10,13 @@ import { FaStar } from 'react-icons/fa'
 import { HiOutlineMinusSmall, HiOutlinePlusSmall } from 'react-icons/hi2'
 import Button from '../components/Button'
 import { BiPlus } from 'react-icons/bi'
+import Title from '../components/Title'
 
 const Product = () => {
   return (
     <section className='py-[150px]'>
       <Container>
+       <Title className='mb-10' t_text='Products'/>
         <Flex className='flex-wrap justify-between gap-y-6'>
           <div className='w-w49'>
         <Image className='w-full' src={Product_1}/>
