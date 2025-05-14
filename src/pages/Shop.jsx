@@ -2,8 +2,8 @@ import React from 'react'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
 import Title from '../components/Title'
-import Pagi_head from '../components/pagi_head'
-import Pagi_body from '../components/Pagi_body'
+import PagiHead from '../components/PagiHead'
+import PagiBody from '../components/PagiBody'
 import Carts from '../components/Carts'
 import Image from '../components/Image'
 import Cart_7 from '../assets/cart_7.png'
@@ -29,61 +29,61 @@ const Account = () => {
         <Title className='mt-6' t_text='Products' />
         <Flex className='pt-[120px] pb-[140px]'>
           <div className='w-[373px] h-[1743px] mr-5'>
-            <Pagi_head text='Shop by Category' />
+            <PagiHead text='Shop by Category' />
             <Flex className='flex-row items-center justify-between border-b border-[#F0F0F0]'>
-              <Pagi_body text='Category 1' /> <HiMiniPlus />
+              <PagiBody text='Category 1' /> <HiMiniPlus />
             </Flex>
-            <Pagi_body text='Category 2' />
+            <PagiBody text='Category 2' />
             <Flex className='flex-row items-center justify-between border-b border-[#F0F0F0]'>
-              <Pagi_body text='Category 3' /> <HiMiniPlus />
+              <PagiBody text='Category 3' /> <HiMiniPlus />
             </Flex>
-            <Pagi_body text='Category 4' />
-            <Pagi_body text='Category 5' />
+            <PagiBody text='Category 4' />
+            <PagiBody text='Category 5' />
 
             <Flex className='flex-row items-center justify-between pointer-events-none  border-b border-[#F0F0F0]'>
-            <Pagi_head className='mt-[53px]' text='Shop by Color' />  <TiArrowSortedUp />
+            <PagiHead className='mt-[53px]' text='Shop by Color' />  <TiArrowSortedUp />
             </Flex>
             <Flex className='border-b border-[#F0F0F0] items-center'>
               <div className='mr-2.5 bg-black rounded-full w-[11px] h-[11px]'>
               </div>
-            <Pagi_body text='Color 1' />
+            <PagiBody text='Color 1' />
             </Flex>
             <Flex className='border-b border-[#F0F0F0] items-center'>
               <div className='mr-2.5 bg-[#FF8686] rounded-full w-[11px] h-[11px]'>
               </div>
-            <Pagi_body text='Color 2' />
+            <PagiBody text='Color 2' />
             </Flex>
             <Flex className='border-b border-[#F0F0F0] items-center'>
               <div className='mr-2.5 bg-[#7ED321] rounded-full w-[11px] h-[11px]'>
               </div>
-            <Pagi_body text='Color 3' />
+            <PagiBody text='Color 3' />
             </Flex>
             <Flex className='border-b border-[#F0F0F0] items-center'>
               <div className='mr-2.5 bg-[#B6B6B6] rounded-full w-[11px] h-[11px]'>
               </div>
-            <Pagi_body text='Color 4' />
+            <PagiBody text='Color 4' />
             </Flex>
             <Flex className='border-b border-[#F0F0F0] items-center'>
               <div className='mr-2.5 bg-[#15CBA5] rounded-full w-[11px] h-[11px]'>
               </div>
-            <Pagi_body text='Color 5' />
+            <PagiBody text='Color 5' />
             </Flex>
 
             <Flex className='flex-row items-center justify-between pointer-events-none  border-b border-[#F0F0F0]'>
-            <Pagi_head className='mt-[53px]' text='Shop by Brand' />  <TiArrowSortedUp />
+            <PagiHead className='mt-[53px]' text='Shop by Brand' />  <TiArrowSortedUp />
             </Flex>
-            <Pagi_body text='Brand 1' />
-            <Pagi_body text='Brand 2' />
-            <Pagi_body text='Brand 3' />
-            <Pagi_body text='Brand 4' />
-            <Pagi_body text='Brand 5' />
+            <PagiBody text='Brand 1' />
+            <PagiBody text='Brand 2' />
+            <PagiBody text='Brand 3' />
+            <PagiBody text='Brand 4' />
+            <PagiBody text='Brand 5' />
 
-            <Pagi_head className='mt-[53px]' text='Shop by Price' />
-            <Pagi_body text='$0.00 - $9.99' />
-            <Pagi_body text='$10.00 - $19.99' />
-            <Pagi_body text='$20.00 - $29.99' />
-            <Pagi_body text='$30.00 - $39.99' />
-            <Pagi_body text='$40.00 - $69.99' />
+            <PagiHead className='mt-[53px]' text='Shop by Price' />
+            <PagiBody text='$0.00 - $9.99' />
+            <PagiBody text='$10.00 - $19.99' />
+            <PagiBody text='$20.00 - $29.99' />
+            <PagiBody text='$30.00 - $39.99' />
+            <PagiBody text='$40.00 - $69.99' />
           </div>
           <div className='w-[800px] h-[2010px]'>
             <Container className=' pb-[118px]'>
