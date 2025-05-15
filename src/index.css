@@ -7,3 +7,23 @@
     --color-secondary: #262626;
     --spacing-w49: 49%;
   }
+  .slick-dots{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+  }
+  .slick-dots ul li div{
+    color: transparent;
+    font-size: 16px;
+    border-right: 3px solid white;
+    padding-right: 10px;
+  }
+  .slick-active {
+    
+    border-right: 3px solid black;
+  }
+  .slick-dots ul  .slick-active div{
+    color: black;
+    
+  }

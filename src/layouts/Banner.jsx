@@ -6,13 +6,50 @@ import Shape from '../assets/Shape.png'
 import Banner1 from '../assets/banner.jpg'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
-import { Link } from 'react-router-dom'
+
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
 const Banner = () => {
+    const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    appendDots: dots => (
+      <div >
+        <ul > {dots} </ul>
+      </div>
+    ),
+    customPaging: i => (
+      <div>
+        0{i + 1}
+      </div>
+    )
+  };
   return (
     <div>
            <section className='border-b border-[#F0F0F0]'>
-      <Link to='/shop'><Image className='w-full' src={Banner1}/></Link>
+      <Slider {...settings}>
+      <div>
+        <Image className='w-full' src={Banner1}/>
+      </div>
+      <div>
+        <Image className='w-full' src={Banner1}/>
+      </div>
+      <div>
+        <Image className='w-full' src={Banner1}/>
+      </div>
+      <div>
+        <Image className='w-full' src={Banner1}/>
+      </div>
+      <div>
+        <Image className='w-full' src={Banner1}/>
+      </div>
+    </Slider>
       <Container>
         <Flex className='justify-between'>
         <Flex className='items-center gap-x-4  py-[30px]'>
