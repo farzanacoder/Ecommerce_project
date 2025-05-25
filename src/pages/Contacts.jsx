@@ -1,16 +1,18 @@
 import React from 'react'
 import Container from '../components/Container'
 import Button from '../components/Button'
-import Image from '../components/Image'
-import Map from '../assets/image 1.png'
+
 import { BiPlus } from 'react-icons/bi'
-import Title from '../components/Title'
+import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
 
 const Contact = () => {
+  let data = useSelector((state)=>state.bread.prevvalue)
   return (
     <Container>
       <h1 className='pt-[120px] font-bold font-dm text-4xl text-secondary'>Contacts</h1>
-      <Title className='mt-6' t_text='Contacts'/>
+      <p><Link to={data=="Home" ? "/" : `/${data}`}>{data==null ? '' :`${data} >` }</Link>  Contact </p>
       <h1 className='py-[120px] font-bold font-dm text-3xl text-secondary'>Fill Up a Form</h1>
       <label className='text-base font-dm font-bold text-secondary' htmlFor="name">Name <br />
         <input className='text-sm mb-6 font-normal py-6 border-b border-[#F0F0F0] w-w49' type="text" name="" id="" placeholder='Your name here' />

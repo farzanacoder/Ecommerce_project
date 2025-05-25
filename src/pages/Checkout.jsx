@@ -53,7 +53,7 @@ const Checkout = () => {
         </div>
 
         <h1 className='py-[45px] font-bold font-dm text-3xl text-secondary'>Your Order</h1>
-        <table class="border-collapse border border-[#F0F0F0] mb-[60px]">
+        <table className="border-collapse border border-[#F0F0F0] mb-[60px]">
           <tbody>
             <Tabrow thead='Product' tbody='Total' />
             <Tabrow thead='Product name x 1' tbody='389.99 $' />
