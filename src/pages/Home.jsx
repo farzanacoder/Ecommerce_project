@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from '../layouts/Banner'
 import Add from '../layouts/Add'
 import Carts from '../components/Carts'
@@ -17,8 +17,20 @@ import Cart_10 from '../assets/cart_10.png'
 import Cart_11 from '../assets/cart_11.png'
 import Cart_12 from '../assets/cart_12.png'
 import Ads_2 from '../assets/Ads_2.png'
+import axios from 'axios'
 
 const Home = () => {
+
+  let [alldata, setAlldata]= useState([])
+
+  useEffect(()=>{
+   async function alItem(){
+      let data =await axios.get('https://dummyjson.com/products')
+      setAlldata(data.data.products)
+    }
+    alItem()
+  },[])
+
   return (
     <>
       <Banner/>
@@ -26,10 +38,13 @@ const Home = () => {
       <Container className=' pb-[118px]'>
         <h1 className='text-xl text-secondary font-bold font-dm mb-12'>New Arrivals</h1>
       <Flex className='gap-x-10'>
-      <Carts price='$44.00' img={Cart_1}/>
-      <Carts price='$44.00' img={Cart_2}/>
-      <Carts price='$44.00' img={Cart_3}/>
-      <Carts price='$44.00' img={Cart_4}/>
+      
+      {
+        alldata.map((item,index)=>(
+            index>=0 && index<=3 &&
+            <Carts price={item.price} img={item.thumbnail} title={item.title} offer={`${item.discountPercentage} %`}/>
+        ))
+      }
       </Flex>
       </Container>
       <Container className=' pb-[118px]'>
